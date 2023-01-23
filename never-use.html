@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .num {
+        display: grid;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+        justify-content: center;
+        align-content: center;
+      }
+      .parts {
+        display: flex;
+        justify-content: center;
+      }
+      .line {
+        width: 50px;
+        height: 1px;
+        background-color: black;
+        transition: all ease 500ms;
+      }
+      .line_hold {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+      }
+      .colorChange {
+        background-color: rgb(73, 173, 212);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="parts">
+        <div class="num colChange1">1</div>
+        <div class="line_hold"><div class="line colChange1"></div></div>
+        <div class="num colChange2">2</div>
+        <div class="line_hold"><div class="line colChange2"></div></div>
+        <div class="num colChange3">3</div>
+      </div>
+      <button>submit</button>
+    </section>
+
+    <script>
+      const colChange1 = document.querySelectorAll('.colChange1');
+      const colChange2 = document.querySelectorAll('.colChange2');
+      const colChange3 = document.querySelector('.colChange3');
+      const btn = document.querySelector('button');
+      let count = 0;
+      btn.addEventListener('click', (el) => {
+        count++;
+        if (count == 1) {
+          colChange1.forEach((element) => {
+            element.classList.add('colorChange');
+          });
+        } else if (count == 2) {
+          colChange2.forEach((element) => {
+            element.classList.add('colorChange');
+          });
+        } else if (count == 3) {
+          colChange3.classList.add('colorChange');
+        }
+      });
+    </script>
+  </body>
+</html>

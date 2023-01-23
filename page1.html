@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assessment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="myjs.js"></script>
+    <title>page1</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title-name">Technovert</h1>
+        <div class="main-navigation">
+            <ul class="main-nav-items">
+                <li><span class="material-symbols-outlined">home</span><a href="">Home</a></li>
+                <li><span class="material-symbols-outlined">rebase</span><a href=""><i></i>Workflow</a></li>
+                <li><span class="material-symbols-outlined">show_chart</span><a href=""><i></i>Statistics</a></li>
+                <li><span class="material-symbols-outlined">
+                    calendar_month
+                    </span><a href=""><i></i>Calender</a></li>
+                <li><span class="material-symbols-outlined">
+                    person
+                    </span><a href=""><i></i>Users</a></li>
+                <li><span class="material-symbols-outlined">
+                    settings
+                    </span><a href=""><i></i>Settings</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        
+        <div class="my-navigation">
+            <div class="My-navigation-left">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <span class="material-symbols-outlined header-menu">
+                    menu
+                </span>
+            </div>
+            <div class="My-navigation-right">
+                <button class="adding">+ Add project</button>
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <img src="Assessment\avatar.png" alt="Avatar" class="avatar"> 
+            </div> 
+        </div> 
+        <div class="visual">
+            <div class="page-navigation">
+                <ul class="page-navigation-items">
+                    <li><a id="home" href="">Home</a></li>
+                    <li><a id="Work" href="">Work</a></li>
+                    <li><a id="messages" href="">Messages</a></li>
+                </ul>
+            </div>
+
+            <div class="page-contain">
+                <div class="left">
+                    <div class="page-contain-1">
+                        <div class="page-contain-header">
+                            <button class="page-contain-select Profile-click">+</button>
+                            <h3>Profile</h3>
+                        </div>
+                        <div class="Profile">
+                            <div class="parts">
+                                <div class="num colChange1">1</div>
+                                <div class="line_hold"><div class="line colChange2"></div></div>
+                                <div class="num colChange2">2</div>
+                                <div class="line_hold"><div class="line colChange3"></div></div>
+                                <div class="num colChange3">3</div>
+                            </div>
+                            <label class="part1" for="num colChange1">Personal details</label>
+                            <label class="part2" for="num colChange2">Job info</label>
+                            <label class="part3" for="num colChange3">Summary</label>
+
+                            <div class="Personal">
+                                <ul class="instruction">
+                                    <li><span class="required">*</span>Required</li>
+                                    <li><span class="material-symbols-outlined">
+                                        lock
+                                        </span>You don't have permission to update</li>
+                                    <li><span><span class="material-symbols-outlined">
+                                        check_circle
+                                        </span></span>Approval needed upon updating</li>
+                                </ul>
+                                <form class="personal-info" action="">
+                                    <div class="col-50">
+                                        <label for="">First Name<span class="required">*</span></label><br>
+                                        <input placeholder="First Name" id="fname" type="text"><br>
+                                        <label for="">Last Name <span class="required">*</span></label><br>
+                                        <input placeholder="Last Name" id="lname" type="text"><br>
+                                        <label id="gender" for="">Gender <span class="required">*</span></label><br>
+                                        <select id="">
+                                            <option selected value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select><br>
+                                        <label for="">Marital status</label><br>
+                                        <select name="" id="">
+                                            <option value="">married</option>
+                                            <option selected value="">Single</option>
+                                        </select><br>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="">Middle Name</label><br>
+                                        <input placeholder="Middle Name" id="mname" type="text"><br>
+                                        <label for="">Display Name</label><br>
+                                        <input id="display-name" id="total_name" type="text" disabled><br>
+                                        <label for="">DOB <span>*</span></label><br>
+                                        <input id="date" type="date"><br>
+                                        <label for="">Blood Group</label><br>
+                                        <select class="Blood-group" name="" id="">
+                                            <option value="">O+</option>
+                                            <option value="">O-</option>
+                                            <option value="">A+</option>
+                                            <option value="">A-</option>
+                                            <option value="">B+</option>
+                                            <option value="">B-</option>
+                                            <option value="">AB+</option>
+                                            <option value="">AB_</option>
+                                        </select><br>
+                                    </div>
+                                </form>
+                                <button class="continue-button-1">Continue</button>
+                            </div>
+        
+                            <div class="job">
+                                <form class="job-info" action="">
+                                    <div class="col-50">
+                                        <label for="">Location</label><br>
+                                        <select name="" id="location-select">
+                                            <option value="">Hyderabad Campus</option>
+                                            <option value="">Bangalore Campus</option>
+                                            <option value="">Chennai</option>
+                                            <option value="">Mumbai</option>
+                                            <option value="">Kolkata</option>
+                                        </select><br>
+                                        <label for="">Job Title<span><button class="change">Change</button></span></label><br>
+                                        <select name="" id="job-select">
+                                            <option value="">Web Designer</option>
+                                            <option value="">Data Scientist</option>
+                                            <option value="">Security Analyst</option>
+                                        </select><br>
+                                        <label for="">Reports To</label><br>
+                                        <input type="text" placeholder="Surendra Yalamanchilli"><br>
+                                        <label for="">Leave plan<span><button class="change">Change</button></span></label><br>
+                                        <select name="" id="leaves">
+                                            <option value="">Default Leave Plan</option>
+                                            <option value="">__</option>
+                                        </select><br>
+                                        <label for="">Attendance Number<span><button class="change">Change</button></span></label><br>
+                                        <input type="text" placeholder="1"><br>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="">Department <span><button class="change">add</button></span></label><br>
+                                        <select name="" id="">
+                                            <option value="" selected>Executive</option>
+                                            <option value="">none</option>
+                                        </select><br>
+                                        <label for="">Secondary Job Role</label><br>
+                                        <input type="text"><br>
+                                        <label for="">Date of Joining</label><br>
+                                        <input type="Date"><br>
+                                        <label for="">Probation end date<span><button class="change">Change</button></span></label><br>
+                                        <input type="date" name="" id=""><br>
+                                        <label for=""></label><br>
+                                        <label for="">Employee Number</label>
+                                        <span><button class="change">Change</button></span><br>
+                                        <input type="text" placeholder="1"><br>
+                                    </div>
+                                </form>
+                                <button class="continue-button-2">Continue</button>
+                            </div>
+        
+                            <div class="Summary">
+                                <form action="" class="summary-info">
+                                    <div class="col-50">
+                                        <label for="">Professional Summary<span><button class="change">edit</button></span></label>
+                                        <p name="" id="text-area">Lorem ipsum dolor sit amet, cu enim repudiare nam. Errem aliquip ea eum, sed
+                                                quas illum audire ea, tamquam hendrerit mei ei. Qui no stet antiopam
+                                                adversarium, eius modus elitr pri in. Recusabo consulatu argumentum ne eum,
+                                                quaerendum scriptorem his id. Eum ea liber docendi interpretaris, nec an virtute
+                                                aliquid officiis. Latine fabulas similique id eam, vis prompta meliore expetenda at,
+                                                sit posse vitae delenit ad. Vivendo lobortis oportere ut cum, ex fugit doctus mei,
+                                                eu eum dico possim. Sanctus volutpat disputando id has, volumus accusam
+                                                lobortis an qui. Cum falli scripta reprehendunt an, libris fastidii pro cu, adhuc
+                                                eligendi corrumpit cu qui. ludico recusabo et vel, eu pro hinc liber convenire. Eum
+                                                diceret definiebas an, minim iracundia an duo. Dico justo definitiones cu nam,
+                                                alienum elaboraret complectitur quo ex, eu fierent mediocrem est. Wisi apeirian
+                                                recusabo mea te, duo vero adipisci reformidans no. Eius expetenda ne ius. Sit ex
+                                                dolor animal, in choro philosophia mei.
+                                        </p>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="">Experience<span><button class="change">edit</button></span></label>
+                                        <p name="" id="text-area">
+                                            Jan 2017 - Feb 2017 | Hyderabad
+                                            No mel eirmod maluisset, no nam offendit convenire dissentiunt, velit facilisis
+                                            democritum an usu. Ea vis aeterno appellantur. Nam ne imperdiet conceptam.
+                                            Aliquam detracto mei ea, ex alii alia nam. Vidisse debitis dolores et est.
+                                        </p>
+                                    </div>
+                                </form>
+                                <button class="continue-button-3">save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-contain-1">
+                        <div class="page-contain-header">
+                            <button class="page-contain-select">+</button>
+                            <h3>Payslips 2017</h3>
+                        </div>
+                        <div class="Payslips 2017">
+
+                        </div>
+                    </div>
+                    <div class="page-contain-1">
+                        <div class="page-contain-header">
+                            <button class="page-contain-select">+</button>
+                            <h3>Attendance</h3>
+                        </div>
+                        <div class="attendance">
+            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-contain-2">
+                    <div class="page-contain-header">
+                        <button class="page-contain-select">+</button>
+                        <h3>Activity</h3>
+                    </div>
+                    <div class="activity">
+                        <ul class="activity-items">
+                            <li>Personal Details <span class="scale-value">55%</span></li>
+                            <li><meter id="scale" value="0.55"></meter></li>
+                            <li>Job Info <span class="scale-value">60%</span></li>
+                            <li><meter id="scale" value="0.6"></meter></li>
+                            <li>Summary <span class="scale-value">50%</span></li>
+                            <li><meter id="scale" value="0.5"></meter></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</body>
+</html>

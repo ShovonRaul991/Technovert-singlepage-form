@@ -1,0 +1,132 @@
+/* main content   */
+.page-navigation{
+    background-color: #F5F5F5;
+}
+
+.page-navigation, .page-contain{
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    display: flex;
+    
+}
+.page-navigation-items{
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.page-navigation-items li{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 10px;
+    font-size: large;
+}
+
+.page-navigation-items li a{
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.page-navigation-items li:hover{
+    border: 1px solid #E3E3E3;
+    border-bottom: 0px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.page-contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.page-contain-header, .page-contain-header h2{
+    display: flex;
+    margin: 0px;
+}
+.page-contain-header{
+    background-color: grey;
+    
+}
+
+.profile-navigation{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.page-contain-1{
+    width:75%;
+}
+.page-contain-2{
+    width:25%;
+}
+
+
+.count1, .count2, .count3{
+    background-color: #2E96DB;
+    border-radius: 60%;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.instruction{
+    display: flex;
+    list-style-type: none;
+}
+.instruction li{
+    padding-right: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    padding: 20px;
+}
+
+.job, .Summary{
+    visibility: none;
+}
+.col-50{
+    width: 50%;
+    
+}
+.col-50 input,.col-50 label,.col-50 select{
+    width:80%;
+}
+.col-50 input,.col-50 select{
+    margin-bottom: 10px;
+}
+.continue-button-1, .continue-button-2, .continue-button-3{
+    float: right;
+    margin-right: 70px;
+}
+.reset-option{
+    display: flex;
+}
+
+/*    activity bar   */
+
+.activity-items{
+    list-style-type: none;
+    padding: 0px;
+}
+#scale{
+    width:200px;
+    height:25px;
+}
+.scale-value{
+   margin-left: 40px
+}
+
+
+meter::-webkit-meter-optimum-value {
+    
+    background: blue;
+}
+

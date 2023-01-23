@@ -1,0 +1,275 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.header{
+    background-color: #0E1A35;
+    color: white;
+    float: left;
+    height: 100vh;
+    margin: 0px
+}
+.main{
+    width:100vw;
+}
+.title-name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 20px;
+}
+.main-nav-items{
+    padding-left: 0px;
+}
+.main-nav-items li{
+    list-style-type: none;
+    border: 1px solid black;
+    text-align: center;
+    border-left: 5px transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.header .material-symbols-outlined{
+    font-size: 15px;
+    color: #4B78E7;
+    position: relative;
+    top:4px;
+    padding-right: 7px;
+}
+.main-nav-items li:hover{
+    background-color: #122143;
+    border-left: 5px solid #4B75E2;
+}
+.main-nav-items a{
+    text-decoration: none;
+    color: white;
+}
+
+/*     my navigation section   */
+
+
+.my-navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.My-navigation-right{
+    padding-right: 40px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2px;
+}
+.My-navigation-right .material-symbols-outlined{
+    position: relative;
+    top:7px;
+    padding: 3px;
+}
+.instruction .material-symbols-outlined{
+    font-size: small;
+}
+
+/* main page navigation*/
+.page-navigation{
+    background-color: #F5F5F5;
+    padding-top: 20px;
+}
+
+.page-navigation-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+}
+.page-navigation-items li,.page-navigation-items li a{
+    padding: 5px 10px 8px 10px;
+    text-transform: uppercase;
+    color: #428BCA;
+    text-decoration: none;
+}
+
+.page-navigation-items li:hover, .page-navigation-items li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* form total container  */
+
+.page-contain{
+    display: flex;
+}
+.left{
+    float:left;
+    width: 70%;
+    margin: 40px 20px 40px 40px;
+}
+.page-contain-2{
+    float: right;
+    margin: 40px 40px 40px 20px;
+}
+.page-contain-1{
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+/*  form editing  */
+.page-contain-header{
+    display: flex;
+    margin: 0px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+.page-contain-header button{
+    border: none;
+    border-right: 1px solid grey;
+}
+.page-contain-header h3{
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/* 3 bubble  */
+.num {
+    
+    display: grid;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    justify-content: center;
+    align-content: center;
+  }
+.parts {
+    display: flex;
+    justify-content: center;
+}
+.part1{
+    position: relative;
+    left: 160px;
+    top:3px;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.part2{
+    position: relative;
+    left: 260px;
+    top:3px;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.part3{
+    position: relative;
+    left: 380px;
+    top:3px;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.line {
+    width: 150px;
+    height: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: #F8F8F8;
+    transition: all ease 500ms;
+}
+.line_hold {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+.colorChange {
+    background-color: rgb(73, 173, 212);
+    color: white;
+}
+
+/*3 bubble editing close  */
+
+.instruction{
+    padding-left: 0px;
+    display: flex;
+    list-style-type: none;
+}
+.instruction li{
+    padding-right: 10px;
+    font-size: small;
+}
+
+/* form editing   */
+.Profile{
+    padding: 50px 80px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.Personal, .job, .Summary{
+    margin-top:40px
+}
+
+.col-50 input,.col-50 label,.col-50 select, .col-50 select option{
+    width: 310px;
+    font-size: small;
+}
+
+.col-50 input, .col-50 select{
+    margin-bottom: 10px;
+}
+
+.continue-button-1, .continue-button-2, .continue-button-3{
+    float: right;
+}
+
+.activity-items{
+    list-style-type: none;
+    padding: 0px;
+}
+#scale{
+    width:260px;
+    height:25px;
+}
+
+.scale-value{
+    float: right
+ }
+
+meter::-webkit-meter-optimum-value {
+    
+    background: blue;
+}
+
+.change{
+    float: right;
+    font-size: 10px;
+    border: none;
+    background-color: white;
+    color: #5cb3ee;
+    text-transform: uppercase;
+}
+
+#text-area{
+    width:300px;
+    font-size: 10px;
+}
